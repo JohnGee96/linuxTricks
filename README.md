@@ -7,6 +7,7 @@ Two modes of interacting with the kernel and each uses different config files
 
         1. "login" as a user
             - uses .profile, .login, .zlogin, .bash_profile, etc..
+            - Special case: In MacOS, opening the terminal utilizes a login shell (uses .bash_profile)
         2. "Interactive mode" via a terminal
             - uses .bashrc, .tcshrc, .zshrc, etc...
             
