@@ -17,3 +17,11 @@ These files can be used to configure session-wide environment variable
 To set a environment variable:
 
         export VAR=FOO
+        
+To order files in a folder in their file size
+
+        ls -lhS
+        
+To see disk partition and usage
+
+        df
