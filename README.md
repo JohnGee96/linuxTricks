@@ -25,3 +25,10 @@ To order files in a folder in their file size
 To see disk partition and usage
 
         df
+        
+Commands Combo useful for resolving git merge conflicts
+        
+        git status | grep "both added" | awk '{ print $3}' | xargs git checkout --theirs
+        git status | grep "both added" | awk '{ print $3}' | xargs git add        
+
+        
