@@ -29,6 +29,10 @@ To see disk partition and usage
 Commands Combo useful for resolving git merge conflicts
         
         git status | grep "both added" | awk '{ print $3}' | xargs git checkout --theirs
-        git status | grep "both added" | awk '{ print $3}' | xargs git add        
+        git status | grep "both added" | awk '{ print $3}' | xargs git add       
+        
+Command to find the small files in a directory and copy it to some other folder
+
+        du -h ./* | sort | grep "K" | awk '{ print $2 }' | xargs -I '{}' cp '{}' ../folder
 
         
