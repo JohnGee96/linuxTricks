@@ -34,5 +34,9 @@ Commands Combo useful for resolving git merge conflicts
 Command to find the small files in a directory and copy it to some other folder
 
         du -h ./* | sort | grep "K" | awk '{ print $2 }' | xargs -I '{}' cp '{}' ../folder
+        
+Find the size of each subdirectory:
+
+        for D in */; do sudo du -sh "${D}"; done
 
         
